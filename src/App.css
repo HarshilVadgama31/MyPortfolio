@@ -1,0 +1,36 @@
+.align-items-end {
+  align-self: end;
+}
+.align-items-center {
+  align-self: center;
+}
+.scroller {
+  margin-top: 0.5em;
+  height: 3.2em;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 10s infinite;
+  font-weight: bold;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -2em;
+  }
+  40% {
+    top: -4em;
+  }
+  60% {
+    top: -6em;
+  }
+  80% {
+    top: -8em;
+  }
+}
